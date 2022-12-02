@@ -1,5 +1,5 @@
 <?php
-    include_once ("conexao.php");
+    include_once ("../conexao.php");
 
     $nome = $_POST['nome_cad'];
 
@@ -17,6 +17,5 @@
         session_start();
     }
 
-    $_SESSION['email'] = $usuario['email'];
-    $_SESSION['senha'] = $usuario['senha'];
+    header("Location: ../html/login.html");
 ?>

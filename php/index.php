@@ -34,7 +34,7 @@
             <div class="grid-navbar" >
                 <nav>
                     <ul class="navbar" >
-                        <li class="navbar"><a href="reservas.html">Reserva</a></li>
+                        <li class="navbar"><a href="reserva.html">Reserva</a></li>
                         <li class="navbar"><a href="acomodacoes.html">Acomodações</a></li>
                         <li class="navbar"><a href="comodidades.html">Comodidades</a></li>
                         <li class="navbar"><a href="ofertas.html">Ofertas</a></li>

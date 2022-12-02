@@ -1,5 +1,5 @@
 <?php
-include('conexao.php');
+include('../conexao.php');
 
 if(isset($_POST['email']) || isset($_POST['senha'])) {
 
@@ -24,11 +24,9 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             if(!isset($_SESSION)) {
                 session_start();
             }
-
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['nome'] = $usuario['nome'];
-            print_r($_SESSION['id']);
-
+            header("Location: ../html/index.html");
         } else {
             echo "Falha ao logar! E-mail ou senha incorretos";
         }
@@ -70,7 +68,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
         <div class="form-group center-form">
 
-            <form method="POST" action="login.php">
+            <form method="POST" action="../php/login.php">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                 <label for="pwd">Password</label>
@@ -79,7 +77,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                     <button type="submit" class="btn btn btn-success btn-lg" style="width: 120px; ">Submit</button>
                     <button type="reset" class="btn btn btn-danger btn-lg" style="width: 120px ">Reset</button>
                 </div>
-                <a href="login.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></a>
+                <a href="../php/logout.php"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></a>
             </form>
         </div>
     </div>
