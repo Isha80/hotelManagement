@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+*{
+  font-family: 'Marcellus SC', serif;
+}
+
+.linha{
+  display: flex;
+  flex-flow: row wrap;
+  padding:10px;
+}
+
+.coluna-50 {
+  width: 70%;
+}
+
+.coluna-25 {
+   width: 15%;
+   background-color: rgb(54,63,251)
+}
+
+.coluna-22 {
+   width: 15%;
+}
+
+@media screen and (max-width: 860px) {
+  .coluna-50 {
+  width: 75%;
+  }
+
+  .coluna-25 {
+   width: 25%;
+  } 
+  
+  .coluna-22 {
+  display: none;
+  } 
+}
+
+@media screen and (max-width:  640px) {
+  .coluna-50 {
+  width: 100%;
+  }
+
+  .coluna-25 {
+   width: 100%;
+  } 
+  .coluna-22 {
+  display: none;
+ 
+  } 
+}
+
+div>aside>p>img{
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li{
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #000;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+nav>ul>li>a:hover {
+  background-color: rgb(255, 0, 202);
+  border-radius: 7px;
+  font-size: 30px;
+}
+
+html{
+  background-color: rgb(0, 90, 207);
+}
+
+header{
+  background: rgb(54,63,251);
+  background: linear-gradient(90deg, rgba(235,38,97,1) 67%, rgba(149,23,212,1) 35%, rgba(54,63,251,1) 0%);
+  min-height: 100px;
+}
+
+header>h1>a{
+  text-decoration: none;
+  color:white;
+  margin-left: 20px;
+  padding-top: 25px;
+}
+
+header>nav{
+  float: right;
+  margin-right: 15px;
+}
+
+header>nav>a{
+  text-decoration: none;
+  color: white;
+}
+
+.grid-conteudo{
+  text-align: center;
+  max-width: 100%;
+  font-size: 30px;
+}
+
+.tabela{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  background-color: #000;
+  min-width: 30px;
+}
+
+footer ul ol {
+  color: white;
+}
+
+form label{
+ font-size: 25px;
+ width: 120px;
+}
+
+.infos{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #000;
+}
+
+fieldset
+{
+  background-color:#A7C0DC;
+  width:300px;
+  height:250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#area
+
+{
+  position:relative;
+  left:37%;
+  top:10px;
+  width:30px;
+  height:270px;
+}
+
+#formulario input.btn_submit
+
+{
+  border-style:dashed;
+  background-color:#f1ff00;
+}
+
+.cabecalho{
+  background-color: #66ffff;
+  width: 20%;
+}
+
+tr>td{
+  border: 1px solid black;
+  padding: 5px;
+  margin: auto;
+}
+
+.imginicial{
+  max-width: 400px;
+}  

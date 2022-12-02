@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+*{
+    font-family: 'Marcellus SC', serif;
+}
+
+#box-1 .mostrar,
+#box-1 .hide-action,
+#box-2 .mostrar,
+#box-2 .hide-action {
+    display: none;
+}
+
+/*
+conforme a HASH atual:
+Mostra os elementos com a classe .mostrar
+Mostra os elementos com a classe .hide-action
+*/
+
+#box-1:target .mostrar,
+#box-1:target .hide-action,
+#box-2:target .mostrar,
+#box-2:target .hide-action {
+    display: block;
+}
+
+/*
+conforme a HASH atual:
+Oculta os elementos com a classe .action-action
+*/
+#box-1:target .show-action,
+#box-2:target .show-action {
+    display: none;
+}
+
+div.center-form {
+    position: relative;
+    min-height: 100vh;
+}
+
+div.center-form > form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
