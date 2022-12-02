@@ -26,11 +26,12 @@
                 }  
             }          
         }
-        $sql_reserva = "INSERT INTO  tb_reserva (id_usuario,tipo,data_entrada,data_saida,quant_hosp,val_reserva) values ('$id','$tipo','$data_entrada','$data_saida','$quant_hosp','$val_reserva')"; 
+    $sql_reserva = "INSERT INTO  * FROM tb_reserva (id_usuario,id_acomodacao,data_entrada,tipo,data_saida,quant_hosp,val_reserva) 
+        values ('$id','$tipo','$data_entrada','$data_saida','$quant_hosp','$val_reserva')"; 
 
-        $reserva = mysqli_query($conector, $sql_reserva);
+    $reserva = mysqli_query($conector, $sql_reserva);
 
-        header("location: index.php");
+    header("location: ../html/index.html");
     }else{
         die("Error");
     } 
